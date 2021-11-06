@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: #f4f4f4;
+}
+
+button {
+  cursor: pointer;
+}
+
+.limitador {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  padding: 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  background-color: #003e8a;
+  height: 74px;
+  display: flex;
+}
+
+.conteudo-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.conteudo-cabecalho a {
+  color: white;
+  transition: opacity 0.2s;
+}
+
+.conteudo-cabecalho a:hover {
+  color: white;
+  opacity: 0.8;
+}
+.conteudo-cabecalho a + a::before {
+  margin: 0.5em;
+  content: "•";
+}
+
+.cabecalho-nav {
+}
+
+#botao-cabecalho {
+  padding: 0.7em 2em;
+  border-radius: 5px;
+  border: none;
+  background-color: #2e6cba;
+  color: white;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+#botao-cabecalho:hover {
+  opacity: 0.8;
+}
+
+.titulo-main {
+  margin-top: 1em;
+}
+
+.review {
+  background: #ffffff;
+  padding: 1em;
+  border-radius: 5px;
+  display: flex;
+}
+
+.conteudo-main {
+  margin: 1em 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+
+.review-title {
+  margin-bottom: 10px;
+}
+.descricao-review {
+  font-size: 0.8em;
+  color: #666666;
+}
+
+.conteudo-review {
+  margin-left: 10px;
+}
+
+.footer-review {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.avalicacao-review {
+  display: flex;
+}
+
+.review-autor {
+  font-size: 0.9em;
+  color: #003e8a;
+  font-weight: bold;
+}
+
+footer {
+  height: 66px;
+  width: 100%;
+  background-color: #003e8a;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  border-bottom: 8px solid #e84691;
+}
+
+.principal {
+  margin-top: 3em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-principal {
+  width: 100%;
+  margin: 1em;
+  font-size: 2em;
+}
+
+#cadastro-review {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.linha-input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+#cadastro-review input,
+#cadastro-review select,
+#cadastro-review textarea,
+#cadastro-usuario input {
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+}
+
+.linha-input input,
+#cadastro-usuario input {
+  padding: 0.8em 0 0.8em 0.7em;
+  width: 100%;
+}
+
+.linha-input input::placeholder {
+  color: #c0c0c0;
+}
+
+.linha-input select {
+  margin-top: 1em;
+  width: 100.6%;
+  padding: 0.8em 0 0.8em 0.7em;
+  width: 100%;
+  color: #c0c0c0;
+}
+
+#descricao-text {
+  width: -webkit-fill-available;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+.botao-enviar {
+  width: 100%;
+  margin-top: 1.2em;
+  padding: 0.8em;
+  border: none;
+  background-color: #2e6cba;
+  color: white;
+  border-radius: 5px;
+  transition: opacity 0.2s;
+}
+
+.botao-enviar:hover {
+  opacity: 0.8;
+}
+
+.titulo-cadastro {
+  font-size: 1.8em;
+}
+
+.principal-cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  height: 80vh;
+  margin: auto;
+}
+
+#cadastro-usuario {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#cadastro-usuario input {
+  width: auto;
+}
+
+#cadastro-usuario input + input {
+  margin-top: 1em;
+}
