@@ -35,6 +35,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 .conteudo-cabecalho a {
   color: white;
   transition: opacity 0.2s;
@@ -44,13 +45,13 @@ header {
   color: white;
   opacity: 0.8;
 }
-.conteudo-cabecalho a + a::before {
+
+.conteudo-cabecalho a+a::before {
   margin: 0.5em;
   content: "•";
 }
 
-.cabecalho-nav {
-}
+.cabecalho-nav {}
 
 #botao-cabecalho {
   padding: 0.7em 2em;
@@ -87,6 +88,7 @@ header {
 .review-title {
   margin-bottom: 10px;
 }
+
 .descricao-review {
   font-size: 0.8em;
   color: #666666;
@@ -116,7 +118,7 @@ footer {
   height: 66px;
   width: 100%;
   background-color: #003e8a;
-  position: absolute;
+  position: fixed;
   left: 0px;
   bottom: 0px;
   border-bottom: 8px solid #e84691;
@@ -225,6 +227,6 @@ footer {
   width: auto;
 }
 
-#cadastro-usuario input + input {
+#cadastro-usuario input+input {
   margin-top: 1em;
 }
