@@ -51,8 +51,6 @@ header {
   content: "•";
 }
 
-.cabecalho-nav {}
-
 #botao-cabecalho {
   padding: 0.7em 2em;
   border-radius: 5px;
@@ -115,11 +113,10 @@ header {
 }
 
 footer {
-  height: 66px;
+  height: 35px;
   width: 100%;
   background-color: #003e8a;
   position: fixed;
-  left: 0px;
   bottom: 0px;
   border-bottom: 8px solid #e84691;
 }
