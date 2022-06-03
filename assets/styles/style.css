@@ -1,11 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 body {
   font-family: "Ubuntu", sans-serif;
   background: #f4f4f4;
+  min-width: 250px;
 }
 
 button {
@@ -16,7 +18,8 @@ button {
   width: 100%;
   max-width: 1280px;
   margin: auto;
-  padding: 0 1em;
+  padding: 0 2em;
+  box-sizing: border-box;
 }
 
 a {
@@ -49,6 +52,10 @@ header {
 .conteudo-cabecalho a+a::before {
   margin: 0.5em;
   content: "•";
+}
+
+.cabecalho-logo img {
+  width: 100%;
 }
 
 #botao-cabecalho {
@@ -96,14 +103,21 @@ header {
   margin-left: 10px;
 }
 
+.conteudo-review img {
+  width: 1rem;
+}
+
 .footer-review {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .avalicacao-review {
   display: flex;
+  align-items: center;
+  padding-right: 2em;
 }
 
 .review-autor {
@@ -112,13 +126,17 @@ header {
   font-weight: bold;
 }
 
-footer {
+.conteudo-footer {
   height: 35px;
   width: 100%;
   background-color: #003e8a;
   position: fixed;
   bottom: 0px;
   border-bottom: 8px solid #e84691;
+}
+
+.preenchimento-footer {
+  padding-top: 50px;
 }
 
 .principal {
@@ -226,4 +244,128 @@ footer {
 
 #cadastro-usuario input+input {
   margin-top: 1em;
+}
+
+#nav {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .conteudo-main {
+    display: block;
+  }
+
+  .review {
+    margin-bottom: 2em;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .cabecalho-nav {
+    display: none;
+  }
+
+  .cabecalho-logo {
+    margin: 0 auto;
+    padding-right: .5em;
+  }
+
+  #menu {
+    display: none;
+    list-style: none;
+  }
+
+  #nav {
+    display: block;
+  }
+
+  #menu a {
+    display: block;
+    padding: 1rem 0;
+    border-top: 2px solid rgb(0, 0, 0, .05);
+  }
+
+  #nav.esconder #menu {
+    display: block;
+
+    background-color: #003e8a;
+    position: absolute;
+    top: 74px;
+    left: 0px;
+    padding-left: 2em;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+  }
+
+  #botao-menu {
+    display: flex;
+    padding: .5em;
+    border-radius: 5px;
+    border: none;
+    background-color: #2e6cba;
+    color: white;
+    font-weight: bold;
+    transition: opacity 0.2s;
+    gap: .5rem;
+  }
+
+  #botao-menu:hover {
+    opacity: 0.8;
+  }
+
+  #hamburguer {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+    align-items: center;
+  }
+
+  #nav.esconder #hamburguer {
+    transform: rotate(135deg);
+  }
+
+  #nav.esconder #hamburguer::after {
+    transform: rotate(-90deg);
+    top: -7px;
+  }
+
+  #nav.esconder #hamburguer::before {
+    width: 0;
+    margin-bottom: -7px;
+  }
+}
+
+@media (max-width: 551px) {
+  .limitador {
+    padding: 0 .5em;
+  }
+
+  .conteudo-main {
+    padding-right: 2em;
+  }
+
+  .review {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .imagem-review {
+    width: 100%;
+    height: 50%;
+  }
 }
