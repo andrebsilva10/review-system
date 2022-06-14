@@ -1,15 +1,17 @@
 //MENU-RESPONSIVO
 
-const botaoMenu = document.getElementById('botao-menu');
+const botaoMenu = document.getElementById('botao-menu');//Via getElementByID
 
 botaoMenu.addEventListener('click', (evento) => {
 
     nav.classList.toggle('esconder');
-    document.addEventListener('click', function (e) {
+
+    let escondido = function (e) {//Função anônima com argumento
         if (e.target.id === '') {
-            nav.classList.remove('esconder');
+            nav.classList.remove('esconder');//Via referência DOM pelo id do elemento HTML
         }
-    });
+    }
+    document.addEventListener('click', escondido);
 
     //ACESSIBILIDADE
     const esconder = nav.classList.contains('esconder');
