@@ -2,20 +2,25 @@
 
 const botaoMenu = document.getElementById('botao-menu');
 
-botaoMenu.addEventListener('click', (event) => {
+botaoMenu.addEventListener('click', (evento) => {
 
     nav.classList.toggle('esconder');
+    document.addEventListener('click', function (e) {
+        if (e.target.id === '') {
+            nav.classList.remove('esconder');
+        }
+    });
 
     //ACESSIBILIDADE
-
     const esconder = nav.classList.contains('esconder');
-    event.currentTarget.setAttribute('aria-expanded', esconder);
+    evento.currentTarget.setAttribute('aria-expanded', esconder);
     if (esconder) {
-        event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+        evento.currentTarget.setAttribute('aria-label', 'Fechar Menu');
     } else {
-        event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+        evento.currentTarget.setAttribute('aria-label', 'Abrir Menu');
     }
     //-----
-})
+});
+
 
 //------
