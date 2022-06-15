@@ -1,5 +1,4 @@
 //MENU-RESPONSIVO
-
 const botaoMenu = document.getElementById('botao-menu');//Via getElementByID
 
 botaoMenu.addEventListener('click', (evento) => {
@@ -23,6 +22,4 @@ botaoMenu.addEventListener('click', (evento) => {
     }
     //-----
 });
-
-
 //------
