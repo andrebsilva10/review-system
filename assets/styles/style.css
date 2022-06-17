@@ -126,6 +126,10 @@ header {
   font-weight: bold;
 }
 
+var {
+  font-style: inherit;
+}
+
 .conteudo-footer {
   height: 35px;
   width: 100%;
