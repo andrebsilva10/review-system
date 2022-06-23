@@ -8,8 +8,8 @@ https://andrebsilva10.github.io/review-system/
 Caixas de Diálogo
 
 - [ ] prompt
-- [ ] alert
-- [ ] confirm
+- [x] alert
+- [x] confirm
 
 Temporizadores
 
@@ -22,7 +22,7 @@ Funções
 - [ ] Função anônima sem argumento
 - [ ] Função anônima com retorno
 - [ ] Função auto-executável
-- [ ] Função com nome
+- [x] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
 - [ ] Passagem de uma função como parâmetro
 - [x] Função Flecha - Arrow Function
@@ -99,8 +99,8 @@ jQuery
 
 Web Storage
 
-- [ ] LocalStorage ou SessionStorage
-- [ ] Leitura e escrita de dados simples
+- [x] LocalStorage ou SessionStorage
+- [x] Leitura e escrita de dados simples
 - [ ] Leitura e escrita de JSON
 
 Ajax com Backend
