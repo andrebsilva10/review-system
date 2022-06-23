@@ -40,9 +40,9 @@ Acesso aos elementos DOM do HTML
 
 - [x] Via referência DOM pelo id do elemento HTML
 - [x] Via getElementByID()
-- [ ] Via getElementsByName()
-- [ ] Via getElementsByTagName()
-- [ ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
+- [x] Via getElementsByName()
+- [x] Via getElementsByTagName()
+- [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
 
