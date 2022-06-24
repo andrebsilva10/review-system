@@ -1,13 +1,13 @@
 //MENU-RESPONSIVO
-const botaoMenu = document.getElementById('botao-menu');//Via getElementByID
+const botaoMenu = document.getElementById('botao-menu'); //Via getElementByID
 
 botaoMenu.addEventListener('click', (evento) => {
 
     nav.classList.toggle('esconder');
 
-    let escondido = function (e) {//Função anônima com argumento
+    let escondido = function (e) { //Função anônima com argumento
         if (e.target.id === '') {
-            nav.classList.remove('esconder');//Via referência DOM pelo id do elemento HTML
+            nav.classList.remove('esconder'); //Via referência DOM pelo id do elemento HTML
         }
     }
     document.addEventListener('click', escondido);
@@ -23,6 +23,3 @@ botaoMenu.addEventListener('click', (evento) => {
     //-----
 });
 //------
-
-const autor = document.getElementsByTagName('var');
-autor[0].textContent = `Por ${localStorage.getItem('Usuario')}`;
