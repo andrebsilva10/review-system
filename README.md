@@ -8,8 +8,8 @@ https://andrebsilva10.github.io/review-system/
 Caixas de Diálogo
 
 - [ ] prompt
-- [ ] alert
-- [ ] confirm
+- [x] alert
+- [x] confirm
 
 Temporizadores
 
@@ -22,7 +22,7 @@ Funções
 - [ ] Função anônima sem argumento
 - [ ] Função anônima com retorno
 - [ ] Função auto-executável
-- [ ] Função com nome
+- [x] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
 - [ ] Passagem de uma função como parâmetro
 - [x] Função Flecha - Arrow Function
@@ -40,9 +40,9 @@ Acesso aos elementos DOM do HTML
 
 - [x] Via referência DOM pelo id do elemento HTML
 - [x] Via getElementByID()
-- [ ] Via getElementsByName()
-- [ ] Via getElementsByTagName()
-- [ ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
+- [x] Via getElementsByName()
+- [x] Via getElementsByTagName()
+- [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
 
@@ -56,7 +56,7 @@ Objetos Nativos
 - [ ] Usar pelo menos 3 métodos de manipulação de array
 - [ ] Usar laço de repetição (for..in ou for..of ou forEach)
 - [ ] Usar pelo menos 3 métodos para manipulação de string
-- [ ] String Template
+- [x] String Template
 
 Objetos
 
@@ -99,8 +99,8 @@ jQuery
 
 Web Storage
 
-- [ ] LocalStorage ou SessionStorage
-- [ ] Leitura e escrita de dados simples
+- [x] LocalStorage ou SessionStorage
+- [x] Leitura e escrita de dados simples
 - [ ] Leitura e escrita de JSON
 
 Ajax com Backend
