@@ -7,7 +7,7 @@ https://andrebsilva10.github.io/review-system/
 
 Caixas de Diálogo
 
-- [ ] prompt
+- [x] prompt
 - [x] alert
 - [x] confirm
 
@@ -21,7 +21,7 @@ Funções
 - [x] Função anônima com argumento
 - [x] Função anônima sem argumento
 - [x] Função anônima com retorno
-- [ ] Função auto-executável
+- [x] Função auto-executável
 - [x] Função com nome
 - [x] Função aninhada/local - declarar uma função dentro de outra
 - [x] Passagem de uma função como parâmetro
@@ -47,8 +47,8 @@ Acesso aos elementos DOM do HTML
 Tratadores de Evento
 
 - [x] Especificar o tratador de evento inline
-- [ ] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
-- [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
+- [x] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
+- [x] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
 - [x] Usar o operador this em funções tratadoras de eventos.
 
 Objetos Nativos
