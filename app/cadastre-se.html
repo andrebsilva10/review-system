@@ -54,15 +54,16 @@
   <main>
     <div class="limitador">
       <div class="principal-cadastro">
-        <h3 class="titulo-cadastro">Login</h3>
+        <h3 class="titulo-cadastro">Cadastre-se</h3>
         <form id="cadastro-usuario">
-          <input type="text" name="usuario" placeholder="Usuário" required />
-          <input type="password" name="senha" placeholder="Senha" required />
-          <button type="submit" class="botao-enviar"
-            onclick="salvar(confirma())">Enviar</button>
-          <!--Especificar o tratador de evento inline-->
+          <input type="text" id="nome" placeholder="Nome" required autofocus />
+          <input type="text" id="usuario" placeholder="Usuário" required />
+          <input type="password" id="senha" placeholder="Senha" required />
+          <input type="password" id="confirma-senha"
+            placeholder="Confirme sua senha" required />
+          <button type="submit" id="botao-cadastre"
+            class="botao-enviar">Cadastre-se</button>
         </form>
-        <p>Não possui uma conta? <a href="cadastre-se.html">Cadastre-se</a></p>
       </div>
     </div>
   </main>
@@ -71,7 +72,7 @@
     <div class="preenchimento-footer"></div>
   </footer>
   <script src="/assets/scripts/script.js"></script>
-  <script src="/assets/scripts/login.js"></script>
+  <script src="/assets/scripts/cadastre-se.js"></script>
 </body>
 
 </html>
