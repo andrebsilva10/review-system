@@ -7,7 +7,7 @@ https://andrebsilva10.github.io/review-system/
 
 Caixas de Diálogo
 
-- [ ] prompt
+- [x] prompt
 - [x] alert
 - [x] confirm
 
@@ -19,12 +19,12 @@ Temporizadores
 Funções
 
 - [x] Função anônima com argumento
-- [ ] Função anônima sem argumento
-- [ ] Função anônima com retorno
-- [ ] Função auto-executável
+- [x] Função anônima sem argumento
+- [x] Função anônima com retorno
+- [x] Função auto-executável
 - [x] Função com nome
-- [ ] Função aninhada/local - declarar uma função dentro de outra
-- [ ] Passagem de uma função como parâmetro
+- [x] Função aninhada/local - declarar uma função dentro de outra
+- [x] Passagem de uma função como parâmetro
 - [x] Função Flecha - Arrow Function
 
 Eventos
@@ -33,7 +33,7 @@ Eventos
 - [x] Evento de movimento do mouse
 - [ ] Evento de teclado - usar charCode ou keyCode
 - [ ] Eventos de formulário - onfocus e onblur
-- [ ] Imprimir alguma propriedade do objeto event recebido como parâmetro
+- [x] Imprimir alguma propriedade do objeto event recebido como parâmetro
 - [x] Propagação de eventos no modelo bolha (usar target e currentTarget, ou seja, disparar o evento em um elemento filho e capturar em um elemento pai) 
 
 Acesso aos elementos DOM do HTML
@@ -46,10 +46,10 @@ Acesso aos elementos DOM do HTML
 
 Tratadores de Evento
 
-- [ ] Especificar o tratador de evento inline
-- [ ] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
-- [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
-- [ ] Usar o operador this em funções tratadoras de eventos.
+- [x] Especificar o tratador de evento inline
+- [x] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
+- [x] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
+- [x] Usar o operador this em funções tratadoras de eventos.
 
 Objetos Nativos
 
