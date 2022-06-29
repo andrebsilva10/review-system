@@ -132,6 +132,17 @@ var {
   position: fixed;
   bottom: 0px;
   border-bottom: 8px solid #e84691;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+#relogio {
+  margin-right: 1em;
+  color: #ffffff;
+  background-color: #2e6cba;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .preenchimento-footer {
