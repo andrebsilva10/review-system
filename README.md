@@ -14,7 +14,7 @@ Caixas de Diálogo
 Temporizadores
 
 - [ ] setInterval
-- [ ] setTimeout
+- [x] setTimeout
 
 Funções
 
@@ -29,10 +29,10 @@ Funções
 
 Eventos
 
-- [ ] Evento de carregamento do documento - onload
+- [x] Evento de carregamento do documento - onload
 - [x] Evento de movimento do mouse
 - [ ] Evento de teclado - usar charCode ou keyCode
-- [ ] Eventos de formulário - onfocus e onblur
+- [x] Eventos de formulário - onfocus e onblur
 - [x] Imprimir alguma propriedade do objeto event recebido como parâmetro
 - [x] Propagação de eventos no modelo bolha (usar target e currentTarget, ou seja, disparar o evento em um elemento filho e capturar em um elemento pai) 
 
@@ -54,13 +54,13 @@ Tratadores de Evento
 Objetos Nativos
 
 - [ ] Usar pelo menos 3 métodos de manipulação de array
-- [ ] Usar laço de repetição (for..in ou for..of ou forEach)
+- [x] Usar laço de repetição (for..in ou for..of ou forEach)
 - [ ] Usar pelo menos 3 métodos para manipulação de string
 - [x] String Template
 
 Objetos
 
-- [ ] Criar objeto usando função construtora ou notação literal
+- [x] Criar objeto usando função construtora ou notação literal
 - [ ] Criar objetos a partir da definição de classes do ES6
 - [ ] Usar herança prototipal nativa ou herança de classes do ES6
 
@@ -81,8 +81,8 @@ Formulário
   - [ ] Customizar as mensagens nos balões de mensagem
   - [ ] Usar os atributos de validação dos inputs
   - [ ] Usar expressões regulares
-- [ ] Ler e escrever em elementos input com a propriedade value
-- [ ] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
+- [x] Ler e escrever em elementos input com a propriedade value
+- [x] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 - [ ] Manipulação de elemento de listagem, como checkbox, radio ou select
 - [ ] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
 

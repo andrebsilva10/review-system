@@ -4,16 +4,16 @@ const senha = $$('senha');
 const confirmaSenha = $$('confirma-senha');
 const botaoCadastre = $$('botao-cadastre');
 
-nome.value = sessionStorage.getItem('Nome');
+(() => nome.value == 'null' ? nome.value = '' : nome.value = sessionStorage.getItem('Nome'))();
 
 function focado() {
     id.style.padding = '1.3em';
 }
 
-confirmaSenha.onblur = function () {
+function desfocado() {
     if (confirmaSenha.value !== senha.value) {
-        alert('As senhas são diferentes!')
-        this.style.border = '2px solid #fc0202'
+        confirmaSenha.style.border = '2px solid #fc0202';
+        alert('As senhas são diferentes!');
     }
 }
 
@@ -22,7 +22,9 @@ window.onload = () => botaoCadastre.onclick = function (e) { //Especificar o tra
         localStorage.setItem('Nome', nome.value);
         localStorage.setItem('Usuario', id.value);
         localStorage.setItem('Senha', senha.value);
+        location.href = '//app/login.html';
         alert('Cadastro realizado com sucesso!');
+        alert('Faça login para cadastrar um review.');
     } else {
         e.preventDefault();
         alert('As senhas não coincidem!');

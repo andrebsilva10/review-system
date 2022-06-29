@@ -1,4 +1,4 @@
-const login = {
+const login = { //Criar objeto usando função construtora ou notação literal
     id: localStorage.getItem('Usuario'),
     senha: localStorage.getItem('Senha')
 };
@@ -16,11 +16,13 @@ function salvar(confirmacao) { //Passagem de uma função como parâmetro
         const inputSenha = document.querySelectorAll('#cadastro-usuario input')[1].value;
 
         if (login.id === inputUsuario && login.senha === inputSenha) {
-            localStorage.setItem('Usuario', inputUsuario);
-            localStorage.setItem('Senha', inputSenha);
+            sessionStorage.setItem('Usuario', inputUsuario);
+            sessionStorage.setItem('Senha', inputSenha);
+            location.href = '//app/cadastrar-review.html';
             alert('Login realizado com sucesso!');
+            alert('Agora você pode cadastrar um review!');
         } else {
-            alert(`Usuário e/ou senha incorretos!`);
+            alert(`Usuário e/ou senha incorretos!`); //alert
         }
     }
 }
