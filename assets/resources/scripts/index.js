@@ -1,9 +1,10 @@
 (function () {
     if (sessionStorage.getItem('Nome') === null) {
         let nome = prompt('Qual é o seu nome?'); //prompt
+        let nomeGrito = nome.toUpperCase;
         sessionStorage.setItem('Nome', nome);
         if (nome !== null) {
-            alert(`Olá ${nome}!! Seja bem-vindo(a)`); //setTimeout
+            alert(`Olá ${nomeGrito}!! Seja bem-vindo(a)`); //setTimeout
         }
     }
 })(); //Função auto-executável
