@@ -10,7 +10,7 @@
 })(); //Função auto-executável
 
 const autor = document.getElementsByTagName('var')[0]; //getElementsByTagName
-autor.textContent = `Por ${localStorage.getItem('Usuario')}`;
+autor.textContent.toLowerCase = `Por ${localStorage.getItem('Usuario')}`;
 
 function escritor(elemento) {
     const textoArray = elemento.innerHTML.split('');
