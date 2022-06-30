@@ -1,16 +1,15 @@
 (function () {
     if (sessionStorage.getItem('Nome') === null) {
         let nome = prompt('Qual é o seu nome?'); //prompt
-        let nomeGrito = nome.toUpperCase;
         sessionStorage.setItem('Nome', nome);
         if (nome !== null) {
-            alert(`Olá ${nomeGrito}!! Seja bem-vindo(a)`); //setTimeout
+            alert(`Olá ${nome}!! Seja bem-vindo(a)`); //setTimeout
         }
     }
 })(); //Função auto-executável
 
 const autor = document.getElementsByTagName('var')[0]; //getElementsByTagName
-autor.textContent.toLowerCase = `Por ${localStorage.getItem('Usuario')}`;
+autor.textContent = `Por ${localStorage.getItem('Usuario')}`;
 
 function escritor(elemento) {
     const textoArray = elemento.innerHTML.split('');

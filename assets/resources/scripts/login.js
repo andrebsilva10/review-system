@@ -6,7 +6,7 @@ const login = { //Criar objeto usando função construtora ou notação literal
 const usuario = document.getElementsByName('usuario')[0]; //Via getElementsByName
 usuario.focus();
 
-let confirma = function () { //Função anônima sem argumento
+const confirma = function () { //Função anônima sem argumento
     return confirm('Deseja fazer login?'); //confirm
 }
 
@@ -18,7 +18,7 @@ function salvar(confirmacao) { //Passagem de uma função como parâmetro
         if (login.id === inputUsuario && login.senha === inputSenha) {
             sessionStorage.setItem('Usuario', inputUsuario);
             sessionStorage.setItem('Senha', inputSenha);
-            location.href = '//app/cadastrar-review.html';
+            location.href = '/cadastrar-review.html';
             alert('Login realizado com sucesso!');
             alert('Agora você pode cadastrar um review!');
         } else {

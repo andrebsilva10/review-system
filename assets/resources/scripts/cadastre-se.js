@@ -22,7 +22,7 @@ window.onload = () => botaoCadastre.onclick = function (e) { //Especificar o tra
         localStorage.setItem('Nome', nome.value);
         localStorage.setItem('Usuario', id.value);
         localStorage.setItem('Senha', senha.value);
-        location.href = '//app/login.html';
+        location.href = 'login.html';
         alert('Cadastro realizado com sucesso!');
         alert('Faça login para cadastrar um review.');
     } else {
