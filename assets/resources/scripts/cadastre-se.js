@@ -17,7 +17,7 @@ function desfocado() {
     }
 }
 
-window.onload = () => botaoCadastre.onclick = function (e) { //Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
+window.onload = () => botaoCadastre.onclick = function () { //Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
     if (confirmaSenha.value === senha.value) {
         localStorage.setItem('Nome', nome.value);
         localStorage.setItem('Usuario', id.value);
@@ -30,3 +30,6 @@ window.onload = () => botaoCadastre.onclick = function (e) { //Especificar o tra
         alert('As senhas não coincidem!');
     }
 }
+$(function () {
+    $('#cep').mask('00.000-000');
+});

@@ -34,16 +34,60 @@ setInterval(function () { //setInterval
     let horas = data.getHours();
     let minutos = data.getMinutes();
     let segundos = data.getSeconds();
-    let relogio = document.getElementById("relogio");
+    let relogio = $('.conteudo-footer div'); //Uso de seletores hierárquicos estáticos
+
+    if (horas < 10) {
+        horas = `0${horas}`;
+    }
 
     if (minutos < 10) {
-        minutos = "0" + minutos;
+        minutos = `0${minutos}`;
     }
 
     if (segundos < 10) {
-        segundos = "0" + segundos;
+        segundos = `0${segundos}`;
     }
 
-    relogio.innerHTML = `${horas}:${minutos}:${segundos}`;
+    $(relogio).text(`${horas}:${minutos}:${segundos}`); //Manipulação do conteúdo de um input e div usando jQuery
 
 }, 1000);
+
+setInterval(() => $('.cabecalho-logo').fadeOut('2000').fadeIn('2000'), 2000); //Efeitos fade
+
+$('#botao-tema').on('click', function () {
+    if ($('body').hasClass('body-dark-mode')) {
+        $('body').removeClass('body-dark-mode'); //Manipulação do CSS via função css() e addClass()/removeClass()
+        $('.review').removeClass('review-dark-mode');
+
+        $('form').find('input').css({
+            'background-color': '',
+            'color': ''
+        });
+        $('form').find('select').css({
+            'background-color': '',
+            'color': ''
+        });
+        $('form').children('textarea').css({
+            'background-color': '',
+            'color': ''
+        });
+        $($('#botao-tema').text('Dark mode'));
+    } else {
+        $('body').addClass('body-dark-mode');
+        $('.review').addClass('review-dark-mode');
+
+        $('form').find('input').css({
+            'background-color': '#030541',
+            'color': '#ffffff'
+        });
+        $('form').find('select').css({
+            'background-color': '#030541',
+            'color': '#ffffff'
+        });
+        $('form').children('textarea').css({
+            'background-color': '#030541',
+            'color': '#ffffff'
+        });
+        $($('#botao-tema').text('Light mode'));
+    }
+})

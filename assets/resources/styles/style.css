@@ -5,6 +5,7 @@
 }
 
 body {
+  min-height: 100vh;
   font-family: "Ubuntu", sans-serif;
   background: #f4f4f4;
   min-width: 250px;
@@ -133,8 +134,9 @@ var {
   bottom: 0px;
   border-bottom: 8px solid #e84691;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
+  min-width: 250px;
 }
 
 #relogio {
@@ -147,6 +149,20 @@ var {
 
 .preenchimento-footer {
   padding-top: 50px;
+}
+
+#botao-tema {
+  margin-left: 1em;
+  padding: 5px;
+  border: none;
+  background-color: #2e6cba;
+  color: white;
+  border-radius: 5px;
+  transition: .5s;
+}
+
+#botao-tema:hover {
+  opacity: 0.8;
 }
 
 .principal {
@@ -186,6 +202,7 @@ var {
 #cadastro-usuario input {
   border: 1px solid #e1e1e1;
   border-radius: 5px;
+  color: #040404;
 }
 
 .linha-input input,
@@ -382,4 +399,13 @@ var {
     width: 100%;
     height: 50%;
   }
+}
+
+.body-dark-mode {
+  background-color: #040404;
+  color: #877f7f;
+}
+
+.review-dark-mode {
+  background-color: #030541;
 }

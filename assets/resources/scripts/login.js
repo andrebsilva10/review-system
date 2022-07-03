@@ -48,3 +48,10 @@ function aCadastre() { //função com nome
         this.style.fontSize = '1em';
     })
 }
+
+$('.botao-enviar').on('click', (() => {
+    if ($('#usuario'.value === '' || $('#senha'.value === ''))) {
+        $('#cadastro-usuario').children('input').css('border-color', 'red');
+        alert('Usuário e/ou senha não podem ser vazios') //Uso de seletores hierárquicos dinâmicos - children
+    }
+}))

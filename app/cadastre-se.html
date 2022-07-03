@@ -62,6 +62,8 @@
           <input type="password" id="senha" placeholder="Senha" required />
           <input type="password" id="confirma-senha"
             placeholder="Confirme sua senha" onblur="desfocado()" required />
+          <input type="text" id="cep" placeholder="CEP" required />
+          <input type="text" id="endereco" placeholder="Endereço" required />
           <button type="submit" id="botao-cadastre"
             class="botao-enviar">Cadastre-se</button>
         </form>
@@ -70,11 +72,14 @@
   </main>
   <footer>
     <div class="conteudo-footer">
-      <p id="relogio"></p>
+      <button id="botao-tema">Dark mode</button>
+      <div id="relogio"></div>
     </div>
     <div class="preenchimento-footer"></div>
   </footer>
   <script src="/node_modules/jquery/dist/jquery.js"></script>
+  <script src="/assets/libraries/jQuery-Mask-Plugin/dist/jquery.mask.js">
+  </script>
   <script src="/assets/resources/scripts/script.js"></script>
   <script src="/assets/resources/scripts/cadastre-se.js"></script>
 </body>

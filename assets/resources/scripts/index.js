@@ -11,6 +11,7 @@
 
 const autor = document.getElementsByTagName('var')[0]; //getElementsByTagName
 autor.textContent = `Por ${localStorage.getItem('Usuario')}`.toLowerCase();
+// Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
 
 function escritor(elemento) {
     const textoArray = elemento.innerHTML.split('');
@@ -20,22 +21,3 @@ function escritor(elemento) {
     });
 }
 escritor(autor);
-
-setInterval(function () {
-    let data = new Date();
-    let horas = data.getHours();
-    let minutos = data.getMinutes();
-    let segundos = data.getSeconds();
-    let relogio = document.getElementById("relogio");
-
-    if (minutos < 10) {
-        minutos = "0" + minutos;
-    }
-
-    if (segundos < 10) {
-        segundos = "0" + segundos;
-    }
-
-    relogio.innerHTML = horas + ":" + minutos + ":" + segundos;
-
-}, 1000);
