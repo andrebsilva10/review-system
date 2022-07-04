@@ -1,24 +1,44 @@
-const nome = $$('nome');
-const id = $$('usuario');
-const senha = $$('senha');
+const nome = document.forms[0].nome; //Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
+const id = document.getElementsByTagName('form')[0].usuario;
+const senha = document.forms[0].elements[2];
 const confirmaSenha = $$('confirma-senha');
 const botaoCadastre = $$('botao-cadastre');
 
-(() => nome.value == 'null' ? nome.value = '' : nome.value = sessionStorage.getItem('Nome'))();
+(() => nome.value === 'null' ? nome.value = '' : nome.value = sessionStorage.getItem('Nome'))();
 
-function focado() {
-    id.style.padding = '1.3em';
+function focado(el) {
+    el.style.padding = '1.3em';
 }
 
-function desfocado() {
+function desfocado(el) {
+    el.style.padding = '';
+}
+
+function validaSenha() {
     if (confirmaSenha.value !== senha.value) {
-        confirmaSenha.style.border = '2px solid #fc0202';
+        confirmaSenha.style.borderColor = '#fc0202';
         alert('As senhas são diferentes!');
+    } else {
+        confirmaSenha.style.border = '';
     }
 }
 
-window.onload = () => botaoCadastre.onclick = function () { //Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
-    if (confirmaSenha.value === senha.value) {
+function validaVazios() {
+    if (nome.value === '' || id.value === '' || senha.value === '' || confirmaSenha.value === '') {
+        return false;
+    }
+    return true;
+}
+
+function confirmarSenha() {
+    if (confirmaSenha.value !== senha.value) {
+        return false;
+    }
+    return true;
+}
+
+window.onload = () => botaoCadastre.onsubmit = function () { //Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
+    if (validaVazios() && confirmarSenha()) {
         localStorage.setItem('Nome', nome.value);
         localStorage.setItem('Usuario', id.value);
         localStorage.setItem('Senha', senha.value);

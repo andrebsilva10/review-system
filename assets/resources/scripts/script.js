@@ -90,4 +90,4 @@ $('#botao-tema').on('click', function () {
         });
         $($('#botao-tema').text('Light mode'));
     }
-})
+});

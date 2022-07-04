@@ -56,29 +56,35 @@
       <div class="principal">
         <h3 class="titulo-principal">Cadastrar uma review</h3>
 
-        <form id="cadastro-review">
+        <form id="cadastro-review" onsubmit="return validaSubmit()">
           <div class="linha-input">
-            <input type="text" placeholder="Titulo do review" id="cadTitulo" />
-            <input type="text" placeholder="Link da imagem" name="cadImg" />
+            <input type="text" placeholder="Titulo do review" id="cadTitulo"
+              minlength="3" required />
+            <input type="url" placeholder="Link da imagem" id="cadImg"
+              required />
           </div>
           <div class="linha-input">
-            <select class="seletor">
-              <option value="a" disabled selected>Categoria do review</option>
-              <option value="a">a</option>
-              <option value="a">a</option>
-              <option value="a">a</option>
+            <select class="seletor" id="seletor-categoria" required>
+              <option value="0" disabled selected>Categoria do review
+              </option>
+              <option value="Celular">Celular</option>
+              <option value="Esporte">Esporte</option>
+              <option value="Ferramenta">Ferramenta</option>
+              <option value="Filmes">Filmes</option>
+              <option value="Roupas">Roupas</option>
+              <option value="Veículos">Veículos</option>
             </select>
-            <select class="seletor">
-              <option value="a" disabled selected>Selecione a nota</option>
-              <option value="a">1</option>
-              <option value="a">2</option>
-              <option value="a">3</option>
-              <option value="a">4</option>
-              <option value="a">5</option>
+            <select class="seletor" id="seletor-nota" required>
+              <option value="0" disabled selected>Selecione a nota</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
             </select>
           </div>
-          <textarea placeholder="Descrição" id="descricao-text"
-            rows="10"></textarea>
+          <textarea placeholder="Descrição" id="descricao-texto" rows="10"
+            required></textarea>
           <button class="botao-enviar" type="submit">Enviar</button>
         </form>
       </div>
