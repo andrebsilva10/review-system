@@ -21,3 +21,19 @@ function escritor(elemento) {
     });
 }
 escritor(autor);
+
+document.addEventListener('keydown', function (e) {
+    switch (e.keyCode) { //Evento de teclado - usar charCode ou keyCode
+        case 73: //I
+            location.href = '/app/cadastrar-review.html';
+            break;
+        case 76: //L
+            location.href = '/app/login.html';
+            break;
+        case 67: //C
+            location.href = '/app/cadastre-se.html';
+            break;
+        default:
+            break;
+    }
+});
