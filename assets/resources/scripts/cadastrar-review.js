@@ -3,7 +3,7 @@ const botaoInserir = $('.botao-enviar').on('click', function () { //Especificar 
     alert('Deseja cadastrar a review?');
 });
 
-function validaSubmit() {
+function validaVazios() {
     if ($('#cadTitulo').val() === '' || $('#cadImg').val() === '' || $('#descricao-texto').val() === '') {
         return false
     }
@@ -28,7 +28,7 @@ function validaURL() {
     } else {
         return false
     }
-}
+};
 
 
 function validaSelect() {
@@ -37,8 +37,8 @@ function validaSelect() {
     const iCategoria = sCategoria.selectedIndex;
     const iNota = sNota.selectedIndex;
 
-    if (iCategoria === null || iCategoria <= 0 || iNota === null || iNota <= 0) {
+    if (iCategoria <= 0 || iNota <= 0) {
         return false
     }
     return true
-}
+};

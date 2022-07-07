@@ -57,18 +57,21 @@
         <h3 class="titulo-cadastro">Cadastre-se</h3>
         <form id="cadastro-usuario">
           <input type="text" id="nome" placeholder="Nome" onfocus="focado(this)"
-            onblur="desfocado(this)" required autofocus />
+            onblur="desfocado(this), validaVazios(this)" required autofocus />
           <input type="text" id="usuario" placeholder="Usuário"
-            onfocus="focado(this)" onblur="desfocado(this)" required />
+            onfocus="focado(this)"
+            onblur="desfocado(this), validaVazios(this)" />
           <input type="password" id="senha" placeholder="Senha"
-            onfocus="focado(this)" onblur="desfocado(this)" required />
+            onfocus="focado(this)"
+            onblur="desfocado(this), validaVazios(this)" />
           <input type="password" id="confirma-senha"
             placeholder="Confirme sua senha" onfocus="focado(this)"
-            onblur="desfocado(this), validaSenha() " required />
+            onblur="desfocado(this), validaVazios(this), validaSenha() " />
           <input type="text" id="cep" placeholder="CEP" onfocus="focado(this)"
-            onblur="desfocado(this)" required />
+            onblur="desfocado(this), validaVazios(this)" />
           <input type="text" id="endereco" placeholder="Endereço"
-            onfocus="focado(this)" onblur="desfocado(this)" required />
+            onfocus="focado(this)"
+            onblur="desfocado(this), validaVazios(this)" />
           <button type="submit" id="botao-cadastre"
             class="botao-enviar">Cadastre-se</button>
         </form>
