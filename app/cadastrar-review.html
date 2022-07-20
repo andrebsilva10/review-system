@@ -58,9 +58,9 @@
 
         <form id="cadastro-review" onsubmit="return validaSubmit()">
           <div class="linha-input">
-            <input type="text" placeholder="Titulo do review" id="cadTitulo"
+            <input type="text" placeholder="Titulo do review" id="titulo"
               minlength="3" required />
-            <input type="url" placeholder="Link da imagem" id="cadImg"
+            <input type="url" placeholder="Link da imagem" id="imagem"
               required />
           </div>
           <div class="linha-input">
@@ -73,6 +73,7 @@
               <option value="Filmes">Filmes</option>
               <option value="Roupas">Roupas</option>
               <option value="Veículos">Veículos</option>
+              <option value="Viagens">Viagens</option>
             </select>
             <select class="seletor" id="seletor-nota" required>
               <option value="0" disabled selected>Selecione a nota</option>
@@ -100,6 +101,7 @@
   <script src="/node_modules/jquery/dist/jquery.js"></script>
   <script src="/assets/resources/scripts/script.js"></script>
   <script src="/assets/resources/scripts/cadastrar-review.js"></script>
+  <script src="/assets/resources/scripts/review.js"></script>
 </body>
 
 </html>
