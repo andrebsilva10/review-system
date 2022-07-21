@@ -17,7 +17,6 @@ function salvar(confirmacao) { //Passagem de uma função como parâmetro
 
         if (login.id === inputUsuario && login.senha === inputSenha) {
             sessionStorage.setItem('Usuario', inputUsuario);
-            sessionStorage.setItem('Senha', inputSenha);
             location.href = 'cadastrar-review.html';
             alert('Login realizado com sucesso!');
             alert('Agora você pode cadastrar um review!');
