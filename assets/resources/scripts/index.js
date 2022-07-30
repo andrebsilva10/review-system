@@ -1,10 +1,10 @@
 (function () {
     if (sessionStorage.getItem('Nome') === null) {
         let nome = prompt('Qual é o seu nome?'); //prompt
-        let nomeGrito = nome.toUpperCase(); //Usar pelo menos 3 métodos para manipulação de string
-        sessionStorage.setItem('Nome', nome);
+        let nomeFormatado = nome[0].toUpperCase() + nome.substring(1); //Usar pelo menos 3 métodos para manipulação de string
+        sessionStorage.setItem('Nome', nomeFormatado);
         if (nome !== null) {
-            alert(`Olá ${nomeGrito}!! Seja bem-vindo(a)`); //setTimeout
+            alert(`Olá ${nomeFormatado}!! Seja bem-vindo(a)`);
         }
     }
 })(); //Função auto-executável

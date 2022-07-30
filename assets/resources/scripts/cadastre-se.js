@@ -18,8 +18,10 @@ function validaSenha() {
     if (confirmaSenha.value !== senha.value) {
         confirmaSenha.style.borderColor = '#fc0202';
         alert('As senhas são diferentes!');
+        return false
     } else {
         confirmaSenha.style.border = '';
+        return true;
     }
 }
 
